@@ -76,6 +76,7 @@ body{
     padding: 0% 10%;
     background-image: url(./images/Group\ 14.png);
     background-repeat: no-repeat;
+    margin-bottom: 100px;
 }
 .banner-content h3{
     font-size: 48px;
@@ -114,4 +115,60 @@ body{
     text-align: center;
     font-size: 18px;
     font-weight: 400;
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.singleGames {
+    position: relative;
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.singleGames img {
+    max-width: 100%;
+    height: 80%;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.play-icon {
+    display: none;
+    font-size: 40px;
+    color: #F948B2;
+}
+
+.singleGames:hover .overlay {
+    opacity: 1;
+}
+.singleGames:hover {
+    border: 2px solid #F948B2;
+}
+
+.singleGames:hover .play-icon {
+    display: block;
 }
