@@ -172,3 +172,71 @@ body{
 .singleGames:hover .play-icon {
     display: block;
 }
+.online-games{
+    margin-bottom: 100px;
+}
+
+/* Featured Section */
+.featured{
+    display: flex;
+    padding: 0% 10%;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.featured-image{
+    padding-left: 200px;
+    width: 50%;
+}
+
+.overlay-img{
+    position: relative;
+    top: 800px;
+    left: -100px;
+}
+.featured-content{
+    margin-top: 400px;
+}
+.featured-content h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px; 
+}
+.featured-content p{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px; 
+}
+
+/* Game Cloud */
+.cloud{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border: 2px solid #ffffff00;
+}
+.cloud img{
+    margin-right: 5px;
+}
+.cloud:hover{
+    border: 2px solid #FF42A5;
+    border-radius: 50px;
+    color: #FF42A5;
+}
+.games-section{
+    margin-top: 600px;
+}
+.game-cloud{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    width: 80%;
+    margin: 0 auto;
+}
+.game-cloud-2nd{
+    grid-template-columns: repeat(4, 1fr); 
+    margin-top: 15px;
+    margin-bottom: 100px;
+    width: 60%;
+}
